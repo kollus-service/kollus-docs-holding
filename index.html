@@ -1,10 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>사이트 준비 중</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kollus Docs - 준비 중</title>
+    <style>
+        :root {
+            --primary-color: #3B82F6; /* 콜러스 브랜드 컬러에 맞춰 수정 가능 */
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            text-align: center;
+        }
+        .container {
+            padding: 2rem;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -0.05em;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 3rem;
+        }
+        .date-badge {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(0, 85, 255, 0.3);
+        }
+        .footer {
+            margin-top: 4rem;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 480px) {
+            h1 { font-size: 1.8rem; }
+        }
+    </style>
 </head>
 <body>
-    <h1>현재 준비 중입니다.</h1>
+    <div class="container">
+        <div class="logo-container">
+            <img src="Kollus_BI.png" alt="Kollus Logo">
+        </div>
+        <h1>새로운 Kollus 가이드를<br>준비하고 있습니다.</h1>
+        <p>4월 1일 오픈 예정입니다.</p>
+        
+        <div class="date-badge">
+            2026. 04. 01. GRAND OPEN
+        </div>
+
+        <div class="footer">
+            Copyright © 2026 CATENOID Inc. All rights reserved.
+        </div>
+    </div>
 </body>
 </html>
